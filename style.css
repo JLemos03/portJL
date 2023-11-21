@@ -1,0 +1,166 @@
+:root{
+    --width: 300px;
+    --padding: 10px;
+    --bgcolor: rgb(52,52,52);
+    --hovercolor: rgb(23,23,23);
+    --width-collapsed: 50px;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif; 
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  h1, h2, p {
+    font-family: sans-serif;
+  }
+
+
+#main-container {
+    color: white;
+    text-align: end;
+}
+
+.body-expanded{
+    margin-left: var(--width);
+}
+
+#sidemenu{
+    background-color: #414345;
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#sidemenu a{
+    color: white;
+    text-decoration: none;
+}
+
+    /* header*/
+
+#sidemenu #header{
+    box-sizing: border-box;
+    border-bottom: solid 1px rgb(23, 23, 23)
+}
+
+#sidemenu #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+#sidemenu #header #title, #sidemenu #header #menu-btn{
+    vertical-align: middle;
+}
+#title{
+    margin-left: 10px;
+}
+#sidemenu #header #menu-btn{
+    display: inline-block;
+}
+
+#sidemenu #header #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+#sidemenu #header #menu-btn:hover{
+    background-color: var(--hovercolor);
+}
+#sidemenu #header #menu-btn .btn-hamburger{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+    /* profile*/
+
+#sidemenu #profile{
+    border-bottom: solid 1px rgb(23, 23, 23);
+    padding: var(--padding);
+    text-align: center;
+}
+
+#sidemenu #profile #photo{
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0 auto;
+}
+
+#photoJL{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+#sidemenu #profile #photo, #sidemenu #profile #name{
+    font-size: 24px;
+    padding: var(--padding) 0;
+    overflow: hidden;
+}
+
+    /* Item*/
+
+#sidemenu #menu-items{
+    overflow: hidden;
+}
+
+#sidemenu #menu-items .item{
+    width: 100%;
+
+}
+
+#sidemenu #menu-items .item .icon-box{
+    display: inline-block;
+}
+
+#sidemenu #menu-items .item #icon-box,
+#sidemenu #menu-items .item .title{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#icon-box{
+    margin-left: 20px;
+    margin-right: 5px;
+}
+#sidemenu #menu-items .item a{
+    display: block;
+    border-bottom: solid 1px rgb(23, 23, 23);
+
+}
+
+#sidemenu #menu-items .item a:hover{
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #menu-item .item .icon-box{
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+
+}
+
+#sidemenu #menu-items .item .title{
+    padding: var(--padding) 0; 
+
+}
+
+#item-lc{
+    border-bottom: solid 1px rgb(23, 23, 23);
+
+}
+
