@@ -1,166 +1,111 @@
-:root{
-    --width: 300px;
-    --padding: 10px;
-    --bgcolor: rgb(52,52,52);
-    --hovercolor: rgb(23,23,23);
-    --width-collapsed: 50px;
-}
-
-
-body {
-    font-family: 'Lato', sans-serif; 
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  }
-
-  h1, h2, p {
-    font-family: sans-serif;
-  }
-
-
-#main-container {
-    color: white;
-    text-align: end;
-}
-
-.body-expanded{
-    margin-left: var(--width);
-}
-
-#sidemenu{
-    background-color: #414345;
-    color: white;
-    position: fixed;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-
-#sidemenu a{
-    color: white;
+*{
+    margin: 0;
+    padding: 0;
     text-decoration: none;
+    
 }
 
-    /* header*/
-
-#sidemenu #header{
-    box-sizing: border-box;
-    border-bottom: solid 1px rgb(23, 23, 23)
-}
-
-#sidemenu #header #title{
-    box-sizing: border-box;
-    overflow: hidden;
+div img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-
-#sidemenu #header #title, #sidemenu #header #menu-btn{
-    vertical-align: middle;
-}
-#title{
-    margin-left: 10px;
-}
-#sidemenu #header #menu-btn{
-    display: inline-block;
-}
-
-#sidemenu #header #menu-btn{
-    cursor: pointer;
-    padding: 10px;
-    width: var(--width-collapsed);
-    box-sizing: border-box;
-}
-
-#sidemenu #header #menu-btn:hover{
-    background-color: var(--hovercolor);
-}
-#sidemenu #header #menu-btn .btn-hamburger{
-    background-color: #fff;
+header{
+  
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 2px;
-    margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header.dwon{
+    background-color: black;
+    padding: 15px 20px;
+    color: white;
 }
 
-    /* profile*/
-
-#sidemenu #profile{
-    border-bottom: solid 1px rgb(23, 23, 23);
-    padding: var(--padding);
-    text-align: center;
+header .logo{
+    position: relative;
+    color: rgb(10, 9, 9);
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5;
 }
 
-#sidemenu #profile #photo{
-    box-sizing: border-box;
-    padding: var(--padding);
-    margin: 0 auto;
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#photoJL{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-
+header ul li {
+    list-style: none;
 }
 
-#sidemenu #profile #photo, #sidemenu #profile #name{
-    font-size: 24px;
-    padding: var(--padding) 0;
-    overflow: hidden;
+header ul li a{
+    position: relative;
+    font-family: Helvetica;
+    margin:  0 15px;
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
 }
 
-    /* Item*/
-
-#sidemenu #menu-items{
-    overflow: hidden;
-}
-
-#sidemenu #menu-items .item{
+.zona1{
+    position: relative;
     width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+header.dwon .logo,
+header.dwon ul li a{
+    color: rgb(234, 230, 223);
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    max-width: 48rem;
+}
+
+.profile{
+    margin-top: 90px;
+    justify-content: space-around;
+}
+
+.box{
 
 }
 
-#sidemenu #menu-items .item .icon-box{
-    display: inline-block;
-}
-
-#sidemenu #menu-items .item #icon-box,
-#sidemenu #menu-items .item .title{
-    font-size: 14px;
-    vertical-align: middle;
-    overflow: hidden;
-    display: inline-block;
-}
-
-#icon-box{
-    margin-left: 20px;
-    margin-right: 5px;
-}
-#sidemenu #menu-items .item a{
+.photo img{
+    margin-top: 100px;
+    height: 90px;
+    width: 90px;
     display: block;
-    border-bottom: solid 1px rgb(23, 23, 23);
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    border: 5px solid rgba(241, 238, 226, 0.454);
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3)
 
-}
-
-#sidemenu #menu-items .item a:hover{
-    background-color: var(--hovercolor);
-}
-
-#sidemenu #menu-item .item .icon-box{
-    box-sizing: border-box;
-    padding: var(--padding);
-    width: var(--width-collapsed);
-
-}
-
-#sidemenu #menu-items .item .title{
-    padding: var(--padding) 0; 
-
-}
-
-#item-lc{
-    border-bottom: solid 1px rgb(23, 23, 23);
-
-}
 
